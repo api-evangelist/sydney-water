@@ -1,0 +1,47 @@
+generated: '2026-10-22'
+method: searched
+probe: true
+source: https://www.sydneywater.com.au/privacy.html
+signals:
+  data_subject_request:
+    url: https://www.sydneywater.com.au/privacy.html
+    section: How to access or amend personal or health information
+    channel: privacy@sydneywater.com.au
+    rights_named: [access, amendment, internal review of conduct]
+    evidence:
+    - source: https://www.sydneywater.com.au/privacy.html
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: The PPIP Act and the HRIP Act give individuals the right to access and amend their own information.
+    - source: https://www.sydneywater.com.au/privacy.html
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        request access to your personal and/or health information by completing the Personal & health
+        information access form and emailing it to privacy@sydneywater.com.au
+    note: >-
+      Statutory access and amendment rights under the NSW PPIP Act and HRIP Act. Requests go through forms
+      emailed to privacy@sydneywater.com.au, and you can ask for an internal review of conduct. No response
+      time is stated on the page. Deletion and portability are not named.
+  incident_notification:
+    url: https://www.sydneywater.com.au/privacy.html
+    section: How we notify you if there's a data breach
+    evidence:
+    - source: https://www.sydneywater.com.au/privacy.html
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        We'll make every effort to notify you personally if your personal or health information is breached.
+        If we can't notify you personally, you'll be able to find details of the data breach in our Public
+        Notification Register.
+    - source: https://www.sydneywater.com.au/privacy.html
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        is part of the Mandatory Notification of Data Breach Scheme (MNDB Scheme), which commenced on 28
+        November 2023. This policy explains how we will handle a data breach containing personal or health
+        information.
+    note: >-
+      Breach notification to affected individuals under the NSW Mandatory Notification of Data Breach Scheme.
+      When individuals can't be contacted, details go in a Public Notification Register (breach date,
+      description, type, and so on). No notification deadline is stated on the page.

@@ -1,0 +1,9 @@
+name: Sydney Water pricing
+generated: '2026-10-22'
+method: none
+audience: unclear
+pricing_basis: none
+published: false
+plan_count: 0
+note: Sydney Water publishes no developer API and therefore no API plans or pricing. Its regulated customer water and wastewater charges are a consumer/utility fee schedule, not API pricing, and are not recorded here.
+plans: []

@@ -1,0 +1,23 @@
+name: Sydney Water MCP Server
+type: MCPServer
+provider: sydney-water
+generated: '2026-10-22'
+method: none
+source: https://www.sydneywater.com.au/
+status: none
+description: >-
+  No official hosted or local MCP server is published by Sydney Water, and there is no public OpenAPI
+  contract from which to derive a candidate tool list. Pre-flight contract discovery on sydneywater.com.au
+  and www.sydneywater.com.au found no OpenAPI, AsyncAPI, GraphQL or MCP endpoint, and a web search
+  returned only unrelated servers (e.g. Sydney Waterscapes, a pond contractor; USGS water data).
+deployment:
+  mode: none
+  auth: unknown
+  verified: searched
+tools: []
+evidence:
+- url: https://www.sydneywater.com.au/
+  status: 200
+  note: Website front door open; no developer portal or API docs linked.
+- url: https://www.sydneywater.com.au/llms.txt
+  status: 404

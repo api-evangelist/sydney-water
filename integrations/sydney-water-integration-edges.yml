@@ -1,0 +1,21 @@
+generated: '2026-10-22'
+method: none
+source:
+- https://zapier.com/apps/sydney-water/integrations
+- https://n8n.io/integrations/sydney-water/
+- https://composio.dev/toolkits/sydney-water
+- https://monid.ai/tools/sydney-water
+checked:
+- https://www.sydneywater.com.au/
+- https://www.sydneywater.com.au/developers.html
+- https://composio.dev/toolkits/sydney-water
+- https://monid.ai/tools/sydney-water
+- https://n8n.io/integrations/sydney-water/
+- https://zapier.com/apps/sydney-water/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
+note: Sydney Water publishes no developer API, integrations page or app marketplace listing found. Web search for
+  a Sydney Water API returned only WaterNSW (a different NSW agency) and council open-data datasets that mention
+  Sydney Water.

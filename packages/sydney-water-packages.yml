@@ -1,0 +1,5 @@
+generated: '2026-10-22'
+method: none
+name: Sydney Water packages
+note: Checked npm (registry.npmjs.org/sydney-water 404) and PyPI (pypi.org/pypi/sydney-water/json 404); no first-party SDK, CLI or GitHub org found (github.com/sydneywater 404 per identity module). Sydney Water publishes no developer API.
+packages: []

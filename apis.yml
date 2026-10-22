@@ -1,23 +1,95 @@
 aid: sydney-water
+
 name: Sydney Water
-description: 'Sydney Water is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: Sydney Water is the statutory state-owned water utility serving Greater Sydney, New South Wales, Australia. Its
+  own site describes its role as supplying water, wastewater, recycled water and stormwater services, protecting public health,
+  managing the environment and the health of Greater Sydney's waterways. The site offers a My Account customer portal for
+  billing and meter reading, plumbing, building and developing services, and supplier and tender information. No public developer
+  API portal was found on its site.
+
 url: https://raw.githubusercontent.com/api-evangelist/sydney-water/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-22'
+
 modified: '2026-10-22'
+
 tags:
 - Company
-apis: []
+- Water Utility
+- Utilities
+- Government
+- Australia
+- Infrastructure
+- Environment
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://www.sydneywater.com.au/content/experience-fragments/sydneywater/us/en/site/header/master/_jcr_content/root/globalheader.coreimg.gif/1680128673516/sw-logo.gif
+
 common:
+- type: Hosts
+  url: hosts/sydney-water-hosts.yml
+- type: DomainSecurity
+  url: security/sydney-water-domain-security.yml
 - type: Website
-  url: https://sydneywater.com.au/
+  url: https://www.sydneywater.com.au/
+- type: Support
+  url: https://www.sydneywater.com.au/contact-us.html
+- type: Blog
+  url: https://www.sydneywater.com.au/about-us/our-publications/news.html
+  name: News
+- type: SignUp
+  url: https://www.sydneywater.com.au/accounts-billing/my-account/register-for-my-account.html
+- type: TermsOfService
+  url: https://www.sydneywater.com.au/terms-of-use.html
+- type: PrivacyPolicy
+  url: https://www.sydneywater.com.au/privacy.html
+- type: LinkedIn
+  url: https://www.linkedin.com/company/sydney-water
+- type: YouTube
+  url: https://www.youtube.com/SydneyWaterTV
+- type: Facebook
+  url: https://www.facebook.com/SydneyWater/
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Website front door open (200, page self-identifies as Sydney Water); no developer portal, API docs or GitHub org
+    found (github.com/sydneywater 404; web search found only WaterNSW/API.NSW, different entities).
+  evidence:
+  - url: https://www.sydneywater.com.au/
+    status: 200
+  - url: https://www.sydneywater.com.au/contact-us.html
+    status: 200
+  - url: https://www.sydneywater.com.au/about-us/our-publications/news.html
+    status: 200
+  - url: https://www.sydneywater.com.au/privacy.html
+    status: 200
+  - url: https://www.sydneywater.com.au/terms-of-use.html
+    status: 200
+  - url: https://www.sydneywater.com.au/accounts-billing/my-account/register-for-my-account.html
+    status: 200
+  - url: https://github.com/sydneywater
+    status: 404
+x-enrichment:
+  date: '2026-10-22'
+  status: enriched
+  artifacts_added: 11
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

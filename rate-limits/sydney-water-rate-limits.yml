@@ -1,0 +1,6 @@
+name: Sydney Water rate limits
+generated: '2026-10-22'
+method: none
+limit_count: 0
+note: No public API or developer documentation exists on sydneywater.com.au (contract discovery on sydneywater.com.au / www.sydneywater.com.au found no OpenAPI, AsyncAPI, GraphQL or MCP), so no rate limits are published.
+limits: []
